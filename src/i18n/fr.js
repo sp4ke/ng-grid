@@ -6,7 +6,7 @@
     ngShowingItemsLabel: 'Articles Affichage des:',
     ngTotalItemsLabel: 'Nombre total d\'articles:',
     ngSelectedItemsLabel: 'Éléments Articles:',
-    ngPageSizeLabel: 'Taille de page:',
+    ngPageSizeLabel: 'Nombre de lignes:',
     ngPagerFirstTitle: 'Première page',
     ngPagerNextTitle: 'Page Suivante',
     ngPagerPrevTitle: 'Page précédente',
