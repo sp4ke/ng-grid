@@ -7,15 +7,15 @@
         var rowHeight = $scope.rowHeight;
         var cols = row.elm.context.children.length;
         for (var r = 0; r < cols; r++) {
-            if (rowHeight < row.elm.context.children[r].children[1].children[0].scrollHeight) {
-                rowHeight = row.elm.context.children[r].children[1].children[0].scrollHeight;
+            if (rowHeight < row.elm.context.children[r].children[1].scrollHeight) {
+                rowHeight = row.elm.context.children[r].children[1].scrollHeight;
                 row.rowHeight = rowHeight;
-                row.cellsMarginTop = rowHeight *  0.014444444 + 'em';
+                row.cellsMarginTop = rowHeight *  0.009 + 'em';
             }
         }
 
         if (rowHeight > $scope.rowHeight) {
-            row.cellsMarginTop = rowHeight *  0.014444444 + 'em';
+            row.cellsMarginTop = rowHeight *  0.009 + 'em';
         } else {
             row.cellsMarginTop = 0 + 'em';
         } 
