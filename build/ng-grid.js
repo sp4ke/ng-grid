@@ -2,7 +2,7 @@
 * ng-grid JavaScript Library
 * Authors: https://github.com/angular-ui/ng-grid/blob/master/README.md 
 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
-* Compiled At: 03/17/2014 03:10
+* Compiled At: 03/17/2014 04:48
 ***********************************************/
 (function(window, $) {
 'use strict';
@@ -2545,15 +2545,15 @@ var ngStyleProvider = function($scope, grid) {
         var rowHeight = $scope.rowHeight;
         var cols = row.elm.context.children.length;
         for (var r = 0; r < cols; r++) {
-            if (rowHeight < row.elm.context.children[r].children[1].children[0].scrollHeight) {
-                rowHeight = row.elm.context.children[r].children[1].children[0].scrollHeight;
+            if (rowHeight < row.elm.context.children[r].children[1].scrollHeight) {
+                rowHeight = row.elm.context.children[r].children[1].scrollHeight;
                 row.rowHeight = rowHeight;
-                row.cellsMarginTop = rowHeight *  0.014444444 + 'em';
+                row.cellsMarginTop = rowHeight *  0.009 + 'em';
             }
         }
 
         if (rowHeight > $scope.rowHeight) {
-            row.cellsMarginTop = rowHeight *  0.014444444 + 'em';
+            row.cellsMarginTop = rowHeight *  0.009 + 'em';
         } else {
             row.cellsMarginTop = 0 + 'em';
         }
